@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.caixinha{
+    background-color: rgba(19, 19, 19, 0.3);
+    padding: 40px;
+    width:250px;
+    border-radius: 10px;
+    box-shadow:  0px 10px 5px 10px hsl(217, 59%, 10%) ;
+    
+    }
+
+img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;    
+}
+
+
+.hover img:hover{
+    filter: brightness(0.8); /* Ajuste o valor conforme necessário para a cor desejada */
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+h2 {
+    color: white;
+    font-size: 23px;
+}
+
+p {
+   color: #ffffff8c;
+   margin: 5px;
+}
+
+p2 {
+    color: hsl(178, 100%, 50%);
+}
+ 
+p3 {
+    color: hsla(215, 52%, 70%, 0.884);
+}
+
+.line {
+    height: 0.1px;
+    width: 100%;
+    background-color: white;
+    margin: 10px 0;
+}
+
+.avatar {
+    display: flex;
+    
+
+}
+
+.imgavatar {
+    height: 30px;
+    width: 30px;
+    border: white solid;
+    border-radius: 50%;
+}
+
+p4 {
+    color: white;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.icon {
+    height: 15px;
+    width: 15px;
+}
+
+.icone {
+    position: absolute;
+    top: 120px;
+    background-color: hsl(178, 100%, 50%, 60%);
+    width: 250px;
+    height: calc(40% - 4px);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.icone:hover { 
+    opacity: 1;
+    cursor: pointer;
+}
+
+.hover .icone img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.caixinha .icone .olhinho {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+}
+
+.alinhamento {
+    display: flex;
+    justify-content: space-around;
+}
